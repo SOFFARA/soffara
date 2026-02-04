@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع صافرة (Soffara) - 
+    وجهتك الرياضية للأخبار، البث المباشر،
+     والألعاب التفاعلية. تابع نتائج فريقك المفضل واربح من خلال منصتنا المتكاملة.">
+    <title>Document</title>
+
+</head>
+<style>
+    *{
+        margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI',  sans-serif;
+    }
+    body{ background-color: #02771f; color: #333; border-radius: 30px;}
+    header{
+        background-color: rgb(246, 4, 4); 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px;
+        border-radius: 30px;
+        max: width 800px;
+        
+    }
+    .logo{
+        font-family: 'Arial Black', sans-serif;
+        font-size: 35px;
+    font-weight: 500;
+    color: #FFFFFF;
+        letter-spacing: -2px; /* تقريب الحروف لبعضها زي الصورة */
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.3); /* ظل خفيف يعطي فخامة */
+    direction: ltr;
+    padding: 20px;
+    }
+    .highlight{
+        position: relative;
+        display: inline-block;
+        color: #9fff10;
+        font: weight 900px;
+        margin: 0 2px;
+        transform: scale(1.2);
+        font-style: italic;
+       
+    z-index: 10; /* يضمن ظهوره فوق الحروف المجاورة */
+    }
+    .DOT{
+        position: absolute;
+        top: 20px;
+        right: 25.4%;
+        transform: translatex(50%);
+        color: aliceblue;
+        font-size: 45px;
+        line-height: 0;
+        padding: 20px;
+    }
+    ul{
+        display: flex;
+        gap: 60px;
+    }
+    a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 25px;
+       font-weight: 600;
+    }
+    li{
+        color: #9fff10;
+    }
+    .container{
+        max-width: 800px; margin: 30px auto; padding: 0 15px; 
+    }
+    .title{
+        margin-bottom: 20px; border-right: 5px solid #ff0707; padding-right: 10px;
+        color: #FFFFFF;
+    }
+    .match-card{
+        background-color: #FFFFFF; display: flex; justify-content: space-around; border-radius: 10px;
+        align-items: center; padding: 20px; box-shadow: #333; transition: transform 0.2s; margin-top: 15px;
+    }
+    .match-card:hover{
+        transform: translateY(-5); border: #ff0707 solid 1px; 
+    }
+    .team{
+        display: flex; flex-direction: column; align-items: center; width: 30%;
+    }
+    .team img{
+        width: 64px; height: 64px;; margin-bottom: 10;
+    }
+    .team span{
+        font-size: 25px;
+    }
+    .match-info{
+        display: flex; align-items: center; flex-direction: column; 
+
+    }
+    .time{
+        direction: ltr;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ff0707;
+    }
+    .status{
+        font-size: 20px;
+        font-weight: 500;
+        color: #f4f4f4;
+        border-radius: 10px;
+        background-color: #ff0707;
+        padding: 5px 20px;
+        margin: 10px;
+    }
+    .match-link { text-decoration: none; color: inherit; display: block; margin-bottom: 15px; }
+    @media(max-width: 600px) {
+            .match-card { padding: 10px; }
+            .team img { width: 40px; height: 40px; }
+            .team span { font-size: 14px; }
+        }
+
+    </style>
+<body>
+    <header>
+        <div class="logo">
+            SOF<span class="highlight">F</span>ARA<SPAN class="DOT">.</SPAN>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">الاخبار</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2 class="title">مباريات اليوم</h2>
+        
+        <a href="watch.html" class="match-link">
+        <div class="match-card">
+            <div class="team">
+                <img src="https://semedia.filgoal.com/Photos/Team/Medium/817.png" alt="team1">
+                <span>كهرباء الاسماعلية</span>
+            </div>
+            <div class="match-info">
+                <span class="time">20:00 pm</span>
+                <span class="status">لم تبدأ</span>
+            </div>
+            <div class="team">
+                <img src="https://semedia.filgoal.com/Photos/Team/Medium/2.png" alt="team2">
+                <span>الزمالك</span>
+            </div>
+        </div>
+        </a>
+        <a href="watch.html" class="match-link">
+        <div class="match-card">
+            <div class="team">
+                <img src="https://semedia.filgoal.com/Photos/Team/Medium/94.png" alt="team1">
+                <span>مان سيتي</span>
+            </div>
+            <div class="match-info">
+                <span class="time">22:00 pm</span>
+                <span class="status">لم تبدأ</span>
+            </div>
+            <div class="team">
+                <img src="https://semedia.filgoal.com/Photos/Team/Medium/97.png" alt="team2">
+                <span>نيوكاسل</span>
+            </div>
+        </div>
+        </a>
+        <a href="watch.html" class="match-link">
+        <div class="match-card">
+            <div class="team">
+                <img src="https://semedia.filgoal.com/Photos/Team/Medium/1683.png" alt="team1">
+                <span>زد</span>
+            </div>
+            <div class="match-info">
+                <span class="time">17:00 pm</span>
+                <span class="status">لم تبدأ</span>
+            </div>
+            <div class="team">
+                <img src="https://semedia.filgoal.com/Photos/Team/Medium/8.png" alt="team2">
+                <span>المصري</span>
+            </div>
+        </div>
+        </a>
+        <a href="watch.html" class="match-link">
+        <div class="match-card">
+            <div class="team">
+                <img src="https://semedia.filgoal.com/Photos/Team/Medium/860.png" alt="team1">
+                <span>سموحة </span>
+            </div>
+            <div class="match-info">
+                <span class="time">17:00 pm</span>
+                <span class="status">لم تبدأ</span>
+            </div>
+            <div class="team">
+                <img src="https://semedia.filgoal.com/Photos/Team/Medium/1451.png" alt="team2">
+                <span>بيراميدز</span>
+            </div>
+        </div>
+        </a>
+    </main>
+    
+        
+    
+
+</body>
+</html>
